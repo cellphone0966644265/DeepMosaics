@@ -1,22 +1,7 @@
 import os
 import sys
-
-# --- Bắt đầu đoạn code sửa lỗi import ---
-# Lấy đường dẫn tuyệt đối của thư mục chứa script hiện tại (ví dụ: /content/DeepMosaics/make_datasets)
-script_dir = os.path.dirname(os.path.abspath(__file__))
-# Lấy đường dẫn thư mục cha của script_dir, đây chính là thư mục gốc của dự án (ví dụ: /content/DeepMosaics)
-project_root = os.path.dirname(script_dir)
-
-# Thêm thư mục gốc của dự án vào sys.path nếu nó chưa có
-# Điều này giúp Python tìm thấy package 'cores'
-if project_root not in sys.path:
-    sys.path.insert(0, project_root) # Thêm vào đầu danh sách để ưu tiên
-    print(f"[DEBUG - make_video_dataset.py] Added project root to sys.path: {project_root}")
-# --- Kết thúc đoạn code sửa lỗi import ---
-
-from cores import Options # Bây giờ lệnh import này nên hoạt động
+from cores import Options 
 opt = Options()
-# ... (phần còn lại của script giữ nguyên)
 
 
 import random
