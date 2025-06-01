@@ -18,7 +18,6 @@ from cores import Options # Bây giờ lệnh import này nên hoạt động
 opt = Options()
 # ... (phần còn lại của script giữ nguyên)
 
-opt = Options()
 
 import random
 import datetime
